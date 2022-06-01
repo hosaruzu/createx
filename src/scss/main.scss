@@ -4,7 +4,9 @@
 @import "fonts";
 @import "settings";
 
+// Elements
+@import "./components/nav";
+@import "./components/header-contacts";
+
 // подключения компонентов страницы
 @import "./components/header";
-
-

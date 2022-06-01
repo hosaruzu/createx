@@ -1,0 +1,17 @@
+.nav {
+  &__list {
+    @include flex-v-center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 41px;
+    }
+  }
+
+  &__link {
+    color: var(--gray-800-color);
+    line-height: 160%;
+    font-weight: 700;
+  }
+}
