@@ -2,11 +2,26 @@
 // colors
 :root {
   // base
-  --font-family: "Open Sans", sans-serif;
-  --content-width: 1170px;
+  --font-family: "Ubuntu", sans-serif;
+  --content-width: 1200px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // colors
   --light-color: #fff;
+  --accent-color: #ff5a30;
+  --info-color: #5a87fc;
+  --warning-color: #f89828;
+  --danger-color: #ff4242;
+  --success-color: #03cea4;
+
+  --gray-100-color: #f9f9f9;
+  --gray-200-color: #f4f5f6;
+  --gray-300-color: #e5e8ed;
+  --gray-400-color: #d7dadd;
+  --gray-500-color: #b3b7bc;
+  --gray-600-color: #9a9ca5;
+  --gray-700-color: #787a80;
+  --gray-800-color: #424551;
+  --gray-900-color: #1e212c;
 }
