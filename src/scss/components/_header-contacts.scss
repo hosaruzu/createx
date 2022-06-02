@@ -5,6 +5,7 @@
     @include flex;
     flex-direction: column;
     align-items: flex-start;
+
     &:not(:last-child) {
       margin-right: 35px;
     }

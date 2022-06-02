@@ -37,7 +37,8 @@ a {
 }
 
 .is-hidden {
-  display: none !important; /* stylelint-disable-line declaration-no-important */
+  display: none !important;
+  /* stylelint-disable-line declaration-no-important */
 }
 
 .btn-reset {
@@ -105,4 +106,63 @@ a {
 
 .page--ios .dis-scroll {
   position: relative;
+}
+
+.main-title {
+  margin: 0;
+  margin-bottom: 25px;
+  color: var(--gray-900-color);
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 130%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  &--home {
+    color: var(--light-color);
+
+    span {
+      color: var(--primary-color);
+    }
+  }
+}
+
+.main-descr {
+  margin: 0;
+  color: var(--gray-700-color);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+
+  &--home {
+    color: var(--light-color);
+    margin-bottom: 60px;
+  }
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--light-color);
+  border-radius: 4px;
+  padding: 15px 39px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+
+  &--fill {
+    background-color: var(--primary-color);
+
+  }
+
+  &--stroke {
+
+    &-light {
+      border-color: var(--light-color);
+    }
+  }
+
 }
