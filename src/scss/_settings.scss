@@ -164,5 +164,37 @@ a {
       border-color: var(--light-color);
     }
   }
+}
 
+.title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 130%;
+  color: var(--gray-900-color);
+
+  &--center {
+    text-align: center;
+  }
+
+  &--margin {
+    margin-bottom: 25px;
+  }
+}
+
+.descr {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--gray-700-color);
+  margin-bottom: 60px;
+
+  &--center {
+    text-align: center;
+  }
+}
+
+.section-offset {
+  padding-top: 120px;
 }
