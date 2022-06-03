@@ -163,7 +163,13 @@ a {
     &-light {
       border-color: var(--light-color);
     }
+
+    &-primary {
+      border-color: var(--primary-color);
+      color: var(--primary-color);
+    }
   }
+
 }
 
 .title {
@@ -197,4 +203,23 @@ a {
 
 .section-offset {
   padding-top: 120px;
+}
+
+.additional {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__subtitle {
+    margin: 0;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+    color: var(--gray-900-color);
+    margin-right: 40px;
+  }
+
+  &__btn {
+    cursor: pointer;
+  }
 }
