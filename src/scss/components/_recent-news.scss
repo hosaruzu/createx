@@ -1,0 +1,115 @@
+.recent-news {
+  background-color: var(--light-color);
+  padding: 80px 0;
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 255px);
+    gap: 30px;
+    margin-bottom: 80px;
+  }
+
+  &__item {
+    &:first-child {
+      grid-column: span 7;
+      grid-row: 2 span;
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      grid-column: span 5;
+    }
+  }
+}
+
+.recent-article {
+  overflow: hidden;
+  height: 100%;
+  border-radius: 4px;
+  box-shadow:
+    0 80px 80px -20px rgba(154, 156, 165, 0.08),
+    0 30px 24px -10px rgba(154, 156, 165, 0.05),
+    0 12px 10px -6px rgba(154, 156, 165, 0.04),
+    0 4px 4px -4px rgba(30, 33, 44, 0.03);
+  background-color: var(--light-color);
+
+  &--small {
+    .recent-article__descr {
+      display: none;
+    }
+
+    .recent-article__text {
+      padding: 12px 24px;
+    }
+
+    .recent-article__title {
+      margin-bottom: 9px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 13px;
+  }
+
+  &__descr {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--gray-800-color);
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--gray-900-color);
+  }
+
+  &__text {
+    padding: 20px 24px;
+  }
+}
+
+.article-meta {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--gray-700-color);
+  margin-bottom: 16px;
+
+  &__item {
+    color: inherit;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 21px;
+
+      &::after {
+        position: absolute;
+        content: "";
+        right: -13px;
+        top: 3px;
+        width: 1px;
+        height: 11px;
+        background-color: currentColor;
+      }
+    }
+
+    &--comments {
+      padding-left: 24px;
+      background-image: url('../img/comments.svg');
+      background-position: left center;
+      background-size: 16px 16px;
+      background-repeat: no-repeat;
+
+    }
+  }
+
+}
