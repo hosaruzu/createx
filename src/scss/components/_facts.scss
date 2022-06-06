@@ -1,0 +1,99 @@
+.facts {
+  padding: 80px 0;
+  padding-top: 180px;
+  padding-bottom: 150px;
+
+  &__list {
+    max-width: 736px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 48px;
+  }
+
+  &__title {
+    margin-bottom: 62px;
+  }
+}
+
+.facts-element {
+  &__circle {
+    width: 149px;
+    height: 149px;
+    position: relative;
+    margin-bottom: 20px;
+
+    svg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    .progress {
+      transform: rotate(-90deg) translateX(20px);
+      transform-origin: center;
+    }
+
+
+    &--clients {
+      .progress {
+        stroke: var(--warning-color);
+      }
+
+      .progress-bg {
+        stroke: rgba($color: #F89828, $alpha: .3)
+      }
+    }
+
+    &--years {
+      .progress {
+        stroke: #F52F6E;
+      }
+
+      .progress-bg {
+        stroke: rgba($color: #F52F6E, $alpha: .3)
+      }
+    }
+
+    &--hours {
+      .progress {
+        stroke: var(--info-color);
+      }
+
+      .progress-bg {
+        stroke: rgba($color: #5A87FC, $alpha: .3)
+      }
+    }
+
+    &--projects {
+      .progress {
+        stroke: var(--success-color);
+      }
+
+      .progress-bg {
+        stroke: rgba($color: #03CEA4, $alpha: .3)
+      }
+    }
+  }
+
+  &__value {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+    color: var(--gray-900-color);
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-900-color);
+
+  }
+}
