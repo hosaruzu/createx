@@ -223,3 +223,52 @@ a {
     cursor: pointer;
   }
 }
+
+.centered {
+  text-align: center;
+  width: 100%;
+}
+
+.custom-checkbox {
+  @include custom-checkbox;
+
+  &__field {
+    position: absolute;
+    opacity: 0;
+  }
+
+  &__content {
+    display: inline-block;
+    position: relative;
+    padding-left: 27px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-800-color);
+
+    &::before {
+      left: -1px;
+      top: 1px;
+      border: 1px solid #FF5A30;
+      border-radius: 3px;
+      width: 16px;
+      height: 16px;
+    }
+
+    &:after {
+      left: -1px;
+      top: 1px;
+      border-radius: 3px;
+      background-color: var(--primary-color);
+      background-image: url("../img/checkbox.svg");
+      background-size: 10px 8px;
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .custom-checkbox__field:focus+.custom-checkbox__content::before {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+  }
+}
