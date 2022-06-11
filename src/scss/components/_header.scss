@@ -1,6 +1,7 @@
 .header {
   padding-top: 23px;
   padding-bottom: 21px;
+  z-index: 5;
 
   &__container {
     @include flex-all-sb;
@@ -12,5 +13,12 @@
 
   &__nav {
     margin-left: -112px;
+  }
+
+  &--secondary {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
   }
 }

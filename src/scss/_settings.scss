@@ -246,9 +246,9 @@ a {
     line-height: 150%;
     color: var(--gray-800-color);
 
-    &::before {
-      left: -1px;
-      top: 1px;
+    &:before {
+      left: 1px;
+      top: 3px;
       border: 1px solid #FF5A30;
       border-radius: 3px;
       width: 16px;
@@ -256,8 +256,8 @@ a {
     }
 
     &:after {
-      left: -1px;
-      top: 1px;
+      left: 1px;
+      top: 3px;
       border-radius: 3px;
       background-color: var(--primary-color);
       background-image: url("../img/checkbox.svg");
