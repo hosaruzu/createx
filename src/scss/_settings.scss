@@ -272,3 +272,9 @@ a {
     outline-offset: 2px;
   }
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gap);
+}

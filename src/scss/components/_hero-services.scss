@@ -1,10 +1,10 @@
 .page-hero {
   background-color: var(--gray-200-color);
-  background-image: url("../img/services-hero.png");
   background-repeat: no-repeat;
-  background-position: right -8px center;
   padding-top: 152px;
-  padding-bottom: 179px;
+  min-height: 600px;
+  background-position: right -8px center;
+  padding-bottom: 80px;
 
   &__breadcrumbs {
     margin-bottom: 41px;
@@ -28,6 +28,13 @@
     line-height: 150%;
     color: var(--gray-700-color);
     max-width: 610px;
+  }
 
+  &--services {
+    background-image: url("../img/services-hero.png");
+  }
+
+  &--service {
+    background-image: url("../img/service-hero.png");
   }
 }
