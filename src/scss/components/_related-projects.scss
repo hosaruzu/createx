@@ -1,6 +1,7 @@
-.portfolio-section {
+.related-projects {
   background-color: var(--light-color);
   padding-bottom: 100px;
+  padding-top: 180px;
 
   &__top {
     display: flex;
@@ -40,7 +41,7 @@
   }
 
   &__subtitle {
-    font-weight: 400;
+    font-weight: 700;
     font-size: 28px;
     line-height: 150%;
   }
