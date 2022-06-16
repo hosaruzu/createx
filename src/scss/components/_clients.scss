@@ -1,0 +1,15 @@
+.clients {
+  background-color: var(--light-color);
+  padding-top: 200px;
+  padding-bottom: 117px;
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 102px;
+  }
+}

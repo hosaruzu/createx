@@ -3,6 +3,14 @@
   padding-bottom: 85px;
   background-color: var(--gray-200-color);
 
+  &--work {
+    background-color: var(--light-color);
+
+    padding-top: 200px;
+    padding-bottom: 117px;
+
+  }
+
   &__title {
     margin-bottom: 60px;
   }
