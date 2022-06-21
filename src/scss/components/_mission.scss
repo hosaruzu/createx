@@ -1,6 +1,12 @@
 .mission {
   background-color: var(--light-color);
 
+  &--secondary {
+    background-color: var(--gray-200-color);
+    padding-bottom: 80px;
+
+  }
+
   &__list {
     margin-bottom: 36px;
     --mission-gap: 94px;

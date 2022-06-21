@@ -5,3 +5,4 @@ import "./components/accordions";
 import "./components/slider-related";
 import "./components/slider-work";
 import "./components/portfolio-tabs";
+import "./components/slider-history";

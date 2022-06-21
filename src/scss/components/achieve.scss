@@ -1,0 +1,132 @@
+.achieve {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: var(--light-color);
+  background-image: url("../img/achieve-bg.png");
+  background-repeat: no-repeat;
+  background-position: right bottom -650px;
+
+  &__item {
+    padding-top: 70px;
+    grid-column: 3 span;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: 48px 48px;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    &--recom {
+      background-image: url("../img/svg/like.svg");
+    }
+
+    &--renovated {
+      background-image: url("../img/svg/painting.svg");
+    }
+
+    &--specialists {
+      background-image: url("../img/svg/helmet.svg");
+    }
+
+    &--carried {
+      background-image: url("../img/svg/pantone.svg");
+    }
+  }
+
+  &__list {
+    margin-bottom: 260px;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-900-color);
+
+  }
+
+  &__value {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 130%;
+    text-align: center;
+    color: var(--primary-color);
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__info {
+    flex-shrink: 0;
+    top: -130px;
+    left: -30px;
+    position: relative;
+    z-index: 10;
+    padding: 80px 82px;
+    padding-bottom: 60px;
+    padding-right: 22px;
+    width: 735px;
+    background-color: var(--light-color);
+    box-shadow: var(--main-shadow);
+    border-radius: 4px;
+  }
+}
+
+.quote {
+  margin: 0;
+
+  &__content {
+    padding: 9px 53px;
+    position: relative;
+    margin-bottom: 32px;
+
+    &::before {
+      content: "";
+      left: -5px;
+      top: 8px;
+      position: absolute;
+      width: 28px;
+      height: 20px;
+      background-image: url("../img/braces.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    p {
+      margin: 0;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 150%;
+      color: var(--gray-900-color);
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__footer {
+    padding: 20px 53px;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-700-color);
+    background-image: url("../img/sign.svg");
+    background-size: 100px 68px;
+    background-position: right 65px center;
+    background-repeat: no-repeat;
+  }
+
+  &__author {
+    margin-bottom: 4px;
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--gray-900-color);
+
+  }
+}
