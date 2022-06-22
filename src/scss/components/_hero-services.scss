@@ -64,7 +64,11 @@
 
   &--about {
     background-image: url("../img/about-hero-img.png"), url("../img/about-hero.png");
+  }
 
+  &--positions {
+    background-image: url("../img/positions-hero.png");
+    background-position: right -8px top 96px;
 
   }
 
