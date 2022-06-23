@@ -43,6 +43,40 @@
     max-width: 610px;
   }
 
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__meta {
+    font-size: 16px;
+    line-height: 160%;
+
+    .article-meta__item {
+
+      &:first-child {
+        color: var(--primary-color);
+        font-weight: 700;
+
+        &::after {
+          background-color: var(--gray-700-color);
+        }
+      }
+    }
+
+    .article-meta__item:not(:last-child)::after {
+      height: 16px;
+      right: -14px;
+      top: 2px;
+    }
+  }
+
+  &__social {
+    svg {
+      fill: var(--gray-700-color);
+    }
+  }
+
   &--services {
     background-image: url("../img/services-hero.png");
   }
@@ -68,8 +102,23 @@
 
   &--positions {
     background-image: url("../img/positions-hero.png");
-    background-position: right -8px top 96px;
+    background-position: right -9px bottom;
+  }
 
+  &--news {
+    background-image: url("../img/news-hero.png");
+
+  }
+
+
+  &--post {
+    .page-hero__title {
+      font-size: 64px;
+      line-height: 120%;
+      max-width: none;
+      text-transform: initial;
+      margin-bottom: 48px;
+    }
   }
 
 

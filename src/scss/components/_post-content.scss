@@ -1,0 +1,127 @@
+.post-content {
+  &__image {
+    width: 100%;
+    object-fit: cover;
+    margin-top: -79px;
+  }
+
+  &__wrapper {
+    max-width: 840px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  &__body {
+    padding-top: 80px;
+    padding-bottom: 60px;
+
+    * {
+      margin-bottom: 28px;
+      font-size: 16px;
+      line-height: 160%;
+      color: var(--gray-800-color);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    h2 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 20px;
+      margin-bottom: 28px;
+      line-height: 150%;
+      color: var(--gray-900-color);
+    }
+
+    h3 {
+      margin: 0;
+      margin-bottom: 25px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 150%;
+      color: var(--gray-900-color);
+    }
+
+    p {
+      margin: 0;
+      margin-bottom: 28px;
+      font-size: 16px;
+      line-height: 160%;
+      color: var(--gray-800-color);
+    }
+
+    blockquote {
+      position: relative;
+      padding: 21px 58px;
+      padding-right: 5px;
+      margin: 0;
+      margin-bottom: 28px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 150%;
+      color: var(--gray-900-color);
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: 21px;
+        left: 0;
+        width: 28px;
+        height: 20px;
+        background-image: url("../img/braces.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      margin-bottom: 28px;
+    }
+
+    li {
+      font-size: 16px;
+      line-height: 160%;
+      color: var(--gray-800-color);
+      position: relative;
+      padding-left: 36px;
+
+      &:not(:last-child) {
+        margin-bottom: 4px;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 20px;
+        top: 3px;
+        left: 0;
+        background-image: url("../img/decisions-item.svg");
+      }
+    }
+  }
+
+  &__share {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--gray-900-color);
+
+    span {
+      margin-right: 10px;
+    }
+
+    svg {
+      fill: var(--gray-700-color);
+    }
+  }
+
+}

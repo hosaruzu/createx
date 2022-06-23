@@ -1,0 +1,21 @@
+.worldwide {
+  background-color: var(--gray-200-color);
+  padding-top: 80px;
+  padding-bottom: 117px;
+
+  &__title {
+    margin-bottom: 60px;
+  }
+}
+
+.worldwide-map {
+  width: 100%;
+  height: 563px;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    fill: var(--gray-500-color);
+  }
+}

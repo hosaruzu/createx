@@ -1,0 +1,65 @@
+.employee {
+  background-color: var(--light-color);
+  padding-bottom: 153px;
+
+  &__list {
+    margin-bottom: 36px;
+    --mission-gap: 94px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 27px;
+    gap: calc(var(--mission-gap) * 2);
+  }
+
+  &__item {
+    position: relative;
+    text-align: center;
+    padding-top: 71px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 48px 48px;
+
+    &--training {
+      background-image: url('../img/training.svg');
+    }
+
+    &--growth {
+      background-image: url('../img/growth.svg');
+    }
+
+    &--salary {
+      background-image: url('../img/salary.svg');
+    }
+
+    &:not(:last-child) {
+      &::after {
+        position: absolute;
+        content: "";
+        top: 0px;
+        right: calc(-1 * var(--mission-gap));
+        background-image: url("../img/divider.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 188px;
+        width: 2px;
+      }
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--gray-900-color);
+    margin-bottom: 8px;
+  }
+
+  &__descr {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--gray-700-color);
+  }
+}

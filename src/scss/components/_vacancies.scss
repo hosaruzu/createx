@@ -1,0 +1,119 @@
+.vacancies {
+  padding-top: 120px;
+  padding-bottom: 56px;
+
+  &__left {
+    grid-column: 7 span;
+  }
+
+  &__right {
+    display: flex;
+    justify-content: flex-end;
+    grid-column: 5 span;
+  }
+}
+
+.vacancies-item {
+  padding: 32px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--light-color);
+  border: 1px solid var(--gray-300-color);
+  border-radius: 4px;
+
+  &__meta {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-700-color)
+  }
+
+  &__city {
+    position: relative;
+    margin-right: 21px;
+    padding-left: 23px;
+    background-image: url("../img/pin.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 16px 16px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      right: -13px;
+      transform: translateY(-50%);
+      width: 1px;
+      height: 12px;
+      background-color: var(--gray-700-color);
+      border-radius: 100px;
+
+    }
+  }
+
+  &__time {
+    padding-left: 23px;
+    background-image: url("../img/clock.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 16px 16px;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--gray-900-color);
+  }
+
+  &__link {
+    display: inline-block;
+    font-size: 14px;
+    padding: 11px 30px;
+  }
+}
+
+.vacancies-list {
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.vacancies-looking {
+  width: 390px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+    color: var(--gray-900-color);
+    margin: 0;
+    margin-bottom: 26px;
+  }
+
+  &__descr {
+    margin: 0;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--gray-800-color);
+    margin-bottom: 47px;
+  }
+
+  &__btn {
+
+
+    &--subscribe {
+      padding-right: 44px;
+      padding-left: 44px;
+      margin-right: 22px;
+    }
+
+    &--cv {
+      padding-right: 54px;
+      padding-left: 54px;
+    }
+  }
+}
