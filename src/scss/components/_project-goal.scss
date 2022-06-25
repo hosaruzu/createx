@@ -3,14 +3,14 @@
   padding-bottom: 120px;
 
   &__left {
-    padding-top: 24px;
     grid-column: 6 span;
+    padding-top: 24px;
   }
 
   &__right {
-    grid-column: 6 span;
     display: flex;
     justify-content: flex-end;
+    grid-column: 6 span;
   }
 
   &__title {
@@ -31,13 +31,13 @@
 }
 
 .project-info {
-  width: 495px;
-  min-height: 300px;
-  background-color: var(--light-color);
-  box-shadow: var(--main-shadow);
   border-radius: 4px;
   padding: 25px 60px;
   padding-right: 40px;
+  width: 495px;
+  min-height: 300px;
+  box-shadow: var(--main-shadow);
+  background-color: var(--light-color);
 
   &__item {
     display: flex;
@@ -48,12 +48,12 @@
   }
 
   &__category {
+    width: 130px;
     font-weight: 700;
     font-size: 16px;
     line-height: 160%;
-    color: var(--gray-900-color);
-    width: 130px;
     text-transform: uppercase;
+    color: var(--gray-900-color);
   }
 
   &__value {

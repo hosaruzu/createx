@@ -1,6 +1,6 @@
 .testimonials {
-  padding-top: 97px;
   margin-bottom: -30px;
+  padding-top: 97px;
   background-color: var(--gray-200-color);
 
   &__container {
@@ -8,11 +8,10 @@
     justify-content: space-between;
   }
 
-
   &__img {
-    margin-bottom: -50px;
     position: relative;
     z-index: 5;
+    margin-bottom: -50px;
   }
 
   &__content {
@@ -24,8 +23,8 @@
   }
 
   &__items {
-    padding-bottom: 12px;
     position: relative;
+    padding-bottom: 12px;
   }
 
   &__slider-nav {
@@ -35,14 +34,13 @@
   }
 }
 
-
 .testimonials-item {
   &__img {
     overflow: hidden;
+    margin-bottom: 25px;
+    border-radius: 100%;
     width: 72px;
     height: 72px;
-    border-radius: 100%;
-    margin-bottom: 25px;
 
     img {
       display: block;
@@ -54,21 +52,21 @@
 
   &__descr {
     margin: 0;
+    margin-bottom: 25px;
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
     color: var(--gray-800-color);
-    margin-bottom: 25px;
   }
 
   &__author {
     display: block;
-    font-weight: 700;
+    margin-bottom: 4px;
     padding-right: 110px;
+    font-weight: 700;
     font-size: 16px;
     line-height: 160%;
     color: var(--gray-900-color);
-    margin-bottom: 4px;
   }
 
   &__author-position {
@@ -78,6 +76,5 @@
     font-size: 14px;
     line-height: 150%;
     color: var(--gray-700-color);
-
   }
 }

@@ -19,7 +19,7 @@
 
     &::before {
       counter-increment: section;
-      content: "0"counter(section);
+      content: "0" counter(section);
       margin-bottom: 16px;
       font-weight: 700;
       font-size: 46px;
@@ -33,23 +33,23 @@
         position: absolute;
         right: 0;
         top: 30px;
-        height: 1px;
         width: 75%;
+        height: 1px;
         background-image: url("../img/line.svg");
+        background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center;
       }
     }
   }
 
   &__subtitle {
     margin: 0;
+    margin-bottom: 9px;
     font-weight: 700;
     font-size: 20px;
     line-height: 150%;
     color: var(--gray-900-color);
-    margin-bottom: 9px;
   }
 
   &__descr {

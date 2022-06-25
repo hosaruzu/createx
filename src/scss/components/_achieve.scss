@@ -1,19 +1,19 @@
 .achieve {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-color: var(--light-color);
   background-image: url("../img/achieve-bg.png");
-  background-repeat: no-repeat;
   background-position: right bottom -650px;
+  background-repeat: no-repeat;
+  background-color: var(--light-color);
 
   &__item {
-    padding-top: 70px;
-    grid-column: 3 span;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-size: 48px 48px;
+    grid-column: 3 span;
+    padding-top: 70px;
     background-position: top center;
+    background-size: 48px 48px;
     background-repeat: no-repeat;
 
     &--recom {
@@ -38,11 +38,10 @@
   }
 
   &__text {
-    text-align: center;
     font-size: 14px;
     line-height: 150%;
+    text-align: center;
     color: var(--gray-900-color);
-
   }
 
   &__value {
@@ -60,18 +59,18 @@
   }
 
   &__info {
-    flex-shrink: 0;
-    top: -130px;
-    left: -30px;
     position: relative;
+    left: -30px;
+    top: -130px;
     z-index: 10;
-    padding: 80px 82px;
-    padding-bottom: 60px;
-    padding-right: 22px;
-    width: 735px;
-    background-color: var(--light-color);
-    box-shadow: var(--main-shadow);
+    flex-shrink: 0;
     border-radius: 4px;
+    padding: 80px 82px;
+    padding-right: 22px;
+    padding-bottom: 60px;
+    width: 735px;
+    box-shadow: var(--main-shadow);
+    background-color: var(--light-color);
   }
 }
 
@@ -79,21 +78,21 @@
   margin: 0;
 
   &__content {
-    padding: 9px 53px;
     position: relative;
     margin-bottom: 32px;
+    padding: 9px 53px;
 
     &::before {
       content: "";
+      position: absolute;
       left: -5px;
       top: 8px;
-      position: absolute;
       width: 28px;
       height: 20px;
       background-image: url("../img/braces.svg");
       background-position: center;
-      background-repeat: no-repeat;
       background-size: cover;
+      background-repeat: no-repeat;
     }
 
     p {
@@ -115,18 +114,17 @@
     line-height: 150%;
     color: var(--gray-700-color);
     background-image: url("../img/sign.svg");
-    background-size: 100px 68px;
     background-position: right 65px center;
+    background-size: 100px 68px;
     background-repeat: no-repeat;
   }
 
   &__author {
-    margin-bottom: 4px;
     display: block;
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 16px;
     line-height: 160%;
     color: var(--gray-900-color);
-
   }
 }

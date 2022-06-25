@@ -3,24 +3,6 @@
   padding-bottom: 85px;
   background-color: var(--gray-200-color);
 
-  &--large {
-    background-color: var(--light-color);
-    padding: 120px 0;
-
-    .partners__title {
-      margin-bottom: 24px;
-    }
-
-  }
-
-  &--work {
-    background-color: var(--light-color);
-
-    padding-top: 200px;
-    padding-bottom: 117px;
-
-  }
-
   &__title {
     margin-bottom: 60px;
   }
@@ -30,6 +12,20 @@
     grid-template-columns: repeat(6, 1fr);
     gap: 102px;
     row-gap: 40px;
+  }
 
+  &--large {
+    padding: 120px 0;
+    background-color: var(--light-color);
+
+    .partners__title {
+      margin-bottom: 24px;
+    }
+  }
+
+  &--work {
+    padding-top: 200px;
+    padding-bottom: 117px;
+    background-color: var(--light-color);
   }
 }

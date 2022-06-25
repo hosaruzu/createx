@@ -23,24 +23,22 @@ const servicesSlider = new Swiper(relatedSlider, {
 });
 
 if (relatedSlider) {
-  document
-    .querySelector(".related-projects__prev")
-    .addEventListener("click", () => {
-      const activeSlide = relatedSlider.querySelector(".swiper-slide-next");
+  document.querySelector(".related-projects__prev").addEventListener("click", () => {
+    const activeSlide = relatedSlider.querySelector(".swiper-slide-next");
 
-      document
-        .querySelectorAll(".related-projects__items .swiper-slide")
-        .forEach((el) => {
-          el.classList.remove("slider-visible");
-        });
+    document
+      .querySelectorAll(".related-projects__items .swiper-slide")
+      .forEach((el) => {
+        el.classList.remove("slider-visible");
+      });
 
-      if (activeSlide.previousElementSibling) {
-        const nextActiveSlide = activeSlide.previousElementSibling;
-        activeSlide.classList.add("slider-visible");
-        nextActiveSlide.classList.add("slider-visible");
-        activeSlide.nextElementSibling.classList.add("slider-visible");
-      }
-    });
+    if (activeSlide.previousElementSibling) {
+      const nextActiveSlide = activeSlide.previousElementSibling;
+      activeSlide.classList.add("slider-visible");
+      nextActiveSlide.classList.add("slider-visible");
+      activeSlide.nextElementSibling.classList.add("slider-visible");
+    }
+  });
 
   document
     .querySelector(".related-projects__next")

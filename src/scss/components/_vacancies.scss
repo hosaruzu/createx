@@ -14,19 +14,19 @@
 }
 
 .vacancies-item {
-  padding: 32px 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--light-color);
   border: 1px solid var(--gray-300-color);
   border-radius: 4px;
+  padding: 32px 40px;
+  background-color: var(--light-color);
 
   &__meta {
     margin-bottom: 8px;
     font-size: 14px;
     line-height: 150%;
-    color: var(--gray-700-color)
+    color: var(--gray-700-color);
   }
 
   &__city {
@@ -34,30 +34,29 @@
     margin-right: 21px;
     padding-left: 23px;
     background-image: url("../img/pin.svg");
-    background-repeat: no-repeat;
     background-position: left center;
     background-size: 16px 16px;
+    background-repeat: no-repeat;
 
     &::after {
-      position: absolute;
       content: "";
-      top: 50%;
+      position: absolute;
       right: -13px;
-      transform: translateY(-50%);
+      top: 50%;
+      border-radius: 100px;
       width: 1px;
       height: 12px;
       background-color: var(--gray-700-color);
-      border-radius: 100px;
-
+      transform: translateY(-50%);
     }
   }
 
   &__time {
     padding-left: 23px;
     background-image: url("../img/clock.svg");
-    background-repeat: no-repeat;
     background-position: left center;
     background-size: 16px 16px;
+    background-repeat: no-repeat;
   }
 
   &__title {
@@ -69,8 +68,8 @@
 
   &__link {
     display: inline-block;
-    font-size: 14px;
     padding: 11px 30px;
+    font-size: 14px;
   }
 }
 
@@ -86,29 +85,27 @@
   width: 390px;
 
   &__title {
+    margin: 0;
+    margin-bottom: 26px;
     font-weight: 700;
     font-size: 28px;
     line-height: 150%;
     color: var(--gray-900-color);
-    margin: 0;
-    margin-bottom: 26px;
   }
 
   &__descr {
     margin: 0;
+    margin-bottom: 47px;
     font-size: 18px;
     line-height: 150%;
     color: var(--gray-800-color);
-    margin-bottom: 47px;
   }
 
   &__btn {
-
-
     &--subscribe {
+      margin-right: 22px;
       padding-right: 44px;
       padding-left: 44px;
-      margin-right: 22px;
     }
 
     &--cv {

@@ -7,7 +7,7 @@
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
-  //grid
+  // grid
   --grid-gap: 30px;
 
   // colors
@@ -17,7 +17,6 @@
   --warning-color: #f89828;
   --danger-color: #ff4242;
   --success-color: #03cea4;
-
   --gray-100-color: #f9f9f9;
   --gray-200-color: #f4f5f6;
   --gray-300-color: #e5e8ed;
@@ -28,10 +27,10 @@
   --gray-800-color: #424551;
   --gray-900-color: #1e212c;
 
-  //styles
-
-  --main-shadow: 0 80px 80px -20px rgba(154, 156, 165, 0.08),
-    0 30px 24px -10px rgba(154, 156, 165, 0.05),
-    0 12px 10px -6px rgba(154, 156, 165, 0.04),
-    0 4px 4px -4px rgba(30, 33, 44, 0.03);
+  // styles
+  --main-shadow:
+    0 80px 80px -20px rgb(154 156 165 / 8%),
+    0 30px 24px -10px rgb(154 156 165 / 5%),
+    0 12px 10px -6px rgba(154 156 165 / 4%),
+    0 4px 4px -4px rgb(30 33 44 / 3%);
 }

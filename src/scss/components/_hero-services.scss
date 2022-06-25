@@ -110,7 +110,6 @@
 
   }
 
-
   &--post {
     .page-hero__title {
       font-size: 64px;
@@ -119,6 +118,11 @@
       text-transform: initial;
       margin-bottom: 48px;
     }
+  }
+
+  &--contacts {
+    background-image: url("../img/contacts-hero.png");
+
   }
 
 

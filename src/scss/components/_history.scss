@@ -1,20 +1,20 @@
 .history {
-  background-color: var(--gray-200-color);
   padding: 100px 0;
+  background-color: var(--gray-200-color);
 
   &__top {
-    margin-bottom: 34px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 34px;
   }
 
   &__item {
-    overflow: hidden;
     grid-column: 8 span;
+    overflow: hidden;
   }
 
   &__slider-nav {
-    transform: translate(12px, 4px)
+    transform: translate(12px, 4px);
   }
 
   &__image {
@@ -29,23 +29,21 @@
   }
 }
 
-
 .history-nav {
   position: relative;
   grid-column: 4 span;
 
   &::before {
+    content: "";
     position: absolute;
     left: 3px;
     top: 0;
-    content: "";
     width: 1px;
     height: 100%;
-    background-color: rgba($color: #9A9CA5, $alpha: 0.6)
+    background-color: rgba($color: #9a9ca5, $alpha: 60%);
   }
 
   &__item {
-
     &:not(:last-child) {
       margin-bottom: 20px;
     }
@@ -58,11 +56,11 @@
     font-size: 28px;
     line-height: 150%;
     color: var(--gray-600-color);
-    transition: color .3s ease-in-out;
+    transition: color 0.3s ease-in-out;
 
     &::before {
-      position: absolute;
       content: "";
+      position: absolute;
       left: 3px;
       top: 13px;
       width: 1px;
@@ -71,14 +69,14 @@
     }
 
     &::after {
-      position: absolute;
       content: "";
-      left: 0px;
+      position: absolute;
+      left: 0;
       top: 17px;
+      border-radius: 100%;
       width: 8px;
       height: 8px;
-      border-radius: 100%;
-      background-color: currentColor;
+      background-color: currentcolor;
     }
 
     &--active {

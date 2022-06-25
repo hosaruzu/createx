@@ -1,23 +1,9 @@
 .news-article {
   overflow: hidden;
-  height: 100%;
   border-radius: 4px;
+  height: 100%;
   box-shadow: var(--main-shadow);
   background-color: var(--light-color);
-
-  &--small {
-    .news-article__descr {
-      display: none;
-    }
-
-    .news-article__text {
-      padding: 12px 24px;
-    }
-
-    .news-article__title {
-      margin-bottom: 9px;
-    }
-  }
 
   &__title {
     margin: 0;
@@ -42,36 +28,50 @@
   &__text {
     padding: 20px 24px;
   }
+
+  &--small {
+    .news-article__descr {
+      display: none;
+    }
+
+    .news-article__text {
+      padding: 12px 24px;
+    }
+
+    .news-article__title {
+      margin-bottom: 9px;
+    }
+  }
 }
 
 .article-meta {
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
   color: var(--gray-700-color);
-  margin-bottom: 16px;
 
   &__item {
-    color: inherit;
     position: relative;
+    color: inherit;
 
     &:not(:last-child) {
       margin-right: 21px;
 
       &::after {
-        position: absolute;
         content: "";
+        position: absolute;
         right: -13px;
         top: 3px;
         width: 1px;
         height: 11px;
-        background-color: currentColor;
+        background-color: currentcolor;
       }
     }
 
     &--comments {
       padding-left: 24px;
-      background-image: url('../img/comments.svg');
+      background-image: url("../img/comments.svg");
       background-position: left center;
       background-size: 16px 16px;
       background-repeat: no-repeat;
@@ -79,12 +79,10 @@
 
     &--time {
       padding-left: 24px;
-      background-image: url('../img/clock.svg');
+      background-image: url("../img/clock.svg");
       background-position: left center;
       background-size: 16px 16px;
       background-repeat: no-repeat;
-
     }
   }
-
 }

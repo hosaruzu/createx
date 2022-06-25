@@ -1,14 +1,10 @@
 .header {
+  z-index: 5;
   padding-top: 23px;
   padding-bottom: 21px;
-  z-index: 5;
 
   &__container {
     @include flex-all-sb;
-  }
-
-  &--main {
-    background-color: var(--light-color);
   }
 
   &__nav {
@@ -17,8 +13,12 @@
 
   &--secondary {
     position: absolute;
-    top: 0;
     left: 0;
+    top: 0;
     width: 100%;
+  }
+
+  &--main {
+    background-color: var(--light-color);
   }
 }

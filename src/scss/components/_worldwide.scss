@@ -1,7 +1,7 @@
 .worldwide {
-  background-color: var(--gray-200-color);
   padding-top: 80px;
   padding-bottom: 117px;
+  background-color: var(--gray-200-color);
 
   &__title {
     margin-bottom: 60px;
@@ -13,9 +13,9 @@
   height: 563px;
 
   svg {
+    overflow: hidden;
     width: 100%;
     height: 100%;
-    overflow: hidden;
     fill: var(--gray-500-color);
   }
 }

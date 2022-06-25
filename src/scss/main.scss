@@ -16,9 +16,6 @@
 @import "./components/news-article";
 @import "./components/comment";
 
-
-
-
 // подключения компонентов страницы
 @import "./components/header";
 @import "./components/hero";
@@ -33,10 +30,9 @@
 @import "./components/contacts-section";
 @import "./components/footer";
 
-
+// base
 @import "./components/hero-services";
 @import "./components/services-content";
-@import "./components/service";
 @import "./components/offer";
 @import "./components/how-we-do";
 @import "./components/service-benefits";
@@ -57,3 +53,4 @@
 @import "./components/post-content";
 @import "./components/post-comments";
 @import "./components/post-form";
+@import "./components/contacts";

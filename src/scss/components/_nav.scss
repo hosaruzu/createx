@@ -10,9 +10,9 @@
   }
 
   &__link {
-    color: var(--gray-800-color);
-    line-height: 160%;
     font-weight: 700;
+    line-height: 160%;
+    color: var(--gray-800-color);
 
     &--current {
       color: var(--primary-color);

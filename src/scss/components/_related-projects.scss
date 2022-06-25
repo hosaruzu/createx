@@ -1,19 +1,19 @@
 .related-projects {
-  background-color: var(--light-color);
-  padding-bottom: 100px;
   padding-top: 180px;
+  padding-bottom: 100px;
+  background-color: var(--light-color);
 
   &__top {
     display: flex;
-    justify-content: space-between;
     align-items: flex-end;
+    justify-content: space-between;
     margin-bottom: 48px;
   }
 
   &__title {
     margin: 0;
-    max-width: 710px;
     padding-bottom: 12px;
+    max-width: 710px;
   }
 
   &__slider-nav {
@@ -27,7 +27,7 @@
     .swiper-slide {
       opacity: 0;
       visibility: hidden;
-      transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
+      transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
     }
 
     .slider-visible {
@@ -45,5 +45,4 @@
     font-size: 28px;
     line-height: 150%;
   }
-
 }

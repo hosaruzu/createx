@@ -8,15 +8,14 @@
       margin-right: 23px;
 
       &::after {
-        position: absolute;
         content: "/";
+        position: absolute;
         right: -15px;
         top: 1px;
         color: var(--gray-600-color);
       }
     }
   }
-
 
   &__link {
     font-size: 14px;
@@ -25,7 +24,6 @@
 
     &:not([href]) {
       color: var(--gray-600-color);
-
     }
   }
 }

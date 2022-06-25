@@ -1,7 +1,7 @@
 .footer {
   padding-top: 80px;
   padding-bottom: 80px;
-  color: rgba($color: #fff, $alpha: .6);
+  color: rgba($color: #fff, $alpha: 60%);
   background-color: var(--gray-900-color);
 
   &__left {
@@ -40,46 +40,47 @@
   }
 
   &__copy {
-    padding-top: 30px;
     grid-column: span 12;
+    padding-top: 30px;
     font-weight: 400;
     font-size: 12px;
     line-height: 150%;
     color: var(--light-color);
 
     span {
+      padding-left: 23px;
       background-image: url("../img/heart.svg");
-      background-repeat: no-repeat;
       background-position: 2px center;
       background-size: 16px 16px;
-      padding-left: 23px;
+      background-repeat: no-repeat;
     }
   }
 
   &__title {
     margin: 0;
+    margin-bottom: 13px;
     font-weight: 700;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--light-color);
-    margin-bottom: 13px;
   }
 }
 
 .footer-form {
   &__subtitle {
+    margin: 0;
+    margin-bottom: 24px;
     font-weight: 700;
     font-size: 24px;
     line-height: 150%;
-    margin: 0;
     color: var(--light-color);
-    margin-bottom: 24px;
   }
 
   &__items {
     @include flex-v-center;
+
     margin-bottom: 15px;
   }
 
@@ -96,11 +97,11 @@
   }
 
   &__input {
-    width: 100%;
+    border: 1px solid rgb(255 255 255 / 20%);
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    background: rgba(255, 255, 255, 0.12);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+    background: rgb(255 255 255 / 12%);
   }
 
   &__descr {
@@ -131,7 +132,7 @@
   }
 
   &__link {
-    color: currentColor;
+    color: currentcolor;
   }
 }
 
@@ -156,6 +157,6 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
-    color: currentColor;
+    color: currentcolor;
   }
 }

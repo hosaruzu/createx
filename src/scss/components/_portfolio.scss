@@ -4,27 +4,25 @@
 
 .portfolio-tabs {
   &__nav {
-    // margin-top: -59px;
-    transform: translateY(-59px);
     display: flex;
     justify-content: space-between;
     margin-bottom: 61px;
+    transform: translateY(-59px);
   }
 
   &__panel {
-
     .portfolio-item {
       grid-column: 4 span;
     }
   }
 
   &__item {
-    background-color: var(--light-color);
-    box-shadow: var(--main-shadow);
     border-radius: 4px;
     width: 230px;
     height: 154px;
-    transition: background-color .2s ease-in-out;
+    box-shadow: var(--main-shadow);
+    background-color: var(--light-color);
+    transition: background-color 0.2s ease-in-out;
 
     &:hover {
       background-color: var(--primary-color);
@@ -54,21 +52,20 @@
   &__btn {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
   }
 
   &__nav-icon {
     display: block;
-    object-fit: cover;
+    margin-bottom: 16px;
     width: 48px;
     height: 48px;
     fill: var(--primary-color);
-    margin-bottom: 16px;
-    transition: fill .2s ease-in-out;
-
+    object-fit: cover;
+    transition: fill 0.2s ease-in-out;
   }
 
   &__nav-text {
@@ -76,8 +73,7 @@
     font-size: 16px;
     line-height: 160%;
     color: var(--gray-600-color);
-    transition: color .2s ease-in-out;
-
+    transition: color 0.2s ease-in-out;
   }
 }
 
@@ -95,8 +91,8 @@
 }
 
 .tabs__nav-btn--active {
-  background-color: var(--primary-color);
   border-radius: 4px;
+  background-color: var(--primary-color);
 
   .portfolio-tabs__nav-icon {
     fill: var(--light-color);
@@ -108,20 +104,20 @@
 }
 
 .portfolio-more {
-  margin-top: 60px;
   display: inline-flex;
   align-items: center;
+  margin-top: 60px;
   font-weight: 700;
   font-size: 16px;
   line-height: 160%;
   color: var(--gray-800-color);
 
   svg {
+    margin-right: 16px;
     width: 24px;
     height: 24px;
     color: inherit;
-    fill: currentColor;
+    fill: currentcolor;
     object-fit: cover;
-    margin-right: 16px;
   }
 }

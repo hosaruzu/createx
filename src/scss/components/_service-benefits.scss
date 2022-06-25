@@ -8,12 +8,12 @@
   }
 
   &__main-descr {
-    color: rgba($color: #fff, $alpha: .6);
+    color: rgba($color: #fff, $alpha: 60%);
   }
 
   &__list {
-    margin-bottom: 36px;
     --mission-gap: 94px;
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 27px;
@@ -22,47 +22,47 @@
 
   &__item {
     position: relative;
-    text-align: center;
-    padding-top: 71px;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: 48px 48px;
     margin-bottom: 71px;
-
-    &--terms {
-      background-image: url('../img/terms.svg');
-    }
-
-    &--workers {
-      background-image: url('../img/workers.svg');
-    }
-
-    &--control {
-      background-image: url('../img/control.svg');
-    }
+    padding-top: 71px;
+    text-align: center;
+    background-position: top center;
+    background-size: 48px 48px;
+    background-repeat: no-repeat;
 
     &:not(:last-child) {
       &::after {
-        position: absolute;
         content: "";
-        top: 0px;
+        position: absolute;
         right: calc(-1 * var(--mission-gap));
+        top: 0;
+        width: 2px;
+        height: 188px;
         background-image: url("../img/divider-dark.svg");
         background-position: center;
         background-repeat: no-repeat;
-        height: 188px;
-        width: 2px;
       }
+    }
+
+    &--terms {
+      background-image: url("../img/terms.svg");
+    }
+
+    &--workers {
+      background-image: url("../img/workers.svg");
+    }
+
+    &--control {
+      background-image: url("../img/control.svg");
     }
   }
 
   &__subtitle {
     margin: 0;
+    margin-bottom: 8px;
     font-weight: 700;
     font-size: 20px;
     line-height: 150%;
     color: var(--light-color);
-    margin-bottom: 8px;
   }
 
   &__descr {
@@ -70,7 +70,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
-    color: rgba($color: #fff, $alpha: .6);
+    color: rgba($color: #fff, $alpha: 60%);
   }
 
   &__centered {
@@ -78,7 +78,7 @@
   }
 
   &__btn {
-    transform: translateY(4px);
     width: 390px;
+    transform: translateY(4px);
   }
 }
