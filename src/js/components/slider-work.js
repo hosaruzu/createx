@@ -1,7 +1,7 @@
-import Swiper from "swiper/bundle";
+import Swiper from 'swiper/bundle';
 
-const workImages = document.querySelector(".work-slider__items--big");
-const workThumbs = document.querySelector(".work-slider__items--small");
+const workImages = document.querySelector('.work-slider__items--big');
+const workThumbs = document.querySelector('.work-slider__items--small');
 
 if (workImages) {
   const workSLider = new Swiper(workThumbs, {
@@ -13,8 +13,8 @@ if (workImages) {
   const workSliderNav = new Swiper(workImages, {
     spaceBetween: 20,
     navigation: {
-      nextEl: ".work-slider__next",
-      prevEl: ".work-slider__prev",
+      nextEl: '.work-slider__next',
+      prevEl: '.work-slider__prev',
     },
     thumbs: {
       swiper: workSLider,

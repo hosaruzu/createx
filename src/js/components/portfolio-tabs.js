@@ -1,7 +1,7 @@
-import GraphTabs from "graph-tabs";
+import GraphTabs from 'graph-tabs';
 
-const dataTabs = document.querySelector(".portfolio-tabs__nav");
+const dataTabs = document.querySelector('.portfolio-tabs__nav');
 
 if (dataTabs) {
-  const tabs = new GraphTabs("portfolio");
+  const tabs = new GraphTabs('portfolio');
 }

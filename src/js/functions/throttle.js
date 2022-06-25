@@ -21,7 +21,6 @@ export const throttle = (func, delay = 250) => {
         savedThis = null;
         savedArgs = null;
       }
-
     }, delay);
-  }
+  };
 };

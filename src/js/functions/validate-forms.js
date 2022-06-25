@@ -1,5 +1,5 @@
 import JustValidate from 'just-validate';
-import Inputmask from "inputmask";
+import Inputmask from 'inputmask';
 
 export const validateForms = (selector, rules, afterSend) => {
   const form = document?.querySelector(selector);
@@ -19,15 +19,15 @@ export const validateForms = (selector, rules, afterSend) => {
     const inputMask = new Inputmask('+7 (999) 999-99-99');
     inputMask.mask(telSelector);
 
-    for (let item of rules) {
+    for (const item of rules) {
       if (item.tel) {
         item.rules.push({
           rule: 'function',
-          validator: function() {
+          validator() {
             const phone = telSelector.inputmask.unmaskedvalue();
             return phone.length === 10;
           },
-          errorMessage: item.telError
+          errorMessage: item.telError,
         });
       }
     }
@@ -35,15 +35,15 @@ export const validateForms = (selector, rules, afterSend) => {
 
   const validation = new JustValidate(selector);
 
-  for (let item of rules) {
+  for (const item of rules) {
     validation
       .addField(item.ruleSelector, item.rules);
   }
 
   validation.onSuccess((ev) => {
-    let formData = new FormData(ev.target);
+    const formData = new FormData(ev.target);
 
-    let xhr = new XMLHttpRequest();
+    const xhr = new XMLHttpRequest();
 
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4) {
@@ -54,12 +54,11 @@ export const validateForms = (selector, rules, afterSend) => {
           console.log('Отправлено');
         }
       }
-    }
+    };
 
     xhr.open('POST', 'mail.php', true);
     xhr.send(formData);
 
     ev.target.reset();
-  })
-
+  });
 };
