@@ -1,3 +1,3 @@
-import "./vendor/focus-visible.js";
-import "./vendor/accordion.js";
-import "./vendor/choices.js";
+import './vendor/focus-visible';
+import './vendor/accordion';
+import './vendor/choices.min';

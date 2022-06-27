@@ -1,0 +1,85 @@
+<section class="contacts">
+  <div class="container">
+    <h2 class="title title--center title--margin">
+      Contact us
+    </h2>
+    <p class="descr descr--center">
+      Please complete the form. Detailed information will help us to make a tuned offer.
+    </p>
+    <div class="contacts__content">
+      <img src="img/contacts.jpg" alt="" class="contacts__image" aria-hidden="true">
+      <form class="form-contacts">
+        <div class="form-contacts__line">
+          <label class="form-label  form-contacts__label">
+            <span class="form-label__caption">Name*</span>
+            <input type="text" class="form-label__input" name="name" placeholder="Your name"
+              required>
+          </label>
+          <label class="form-label form-contacts__label">
+            <span class="form-label__caption">I am interested in</span>
+            <select name="interest" class="form-label__select">
+              <option value="">Choose interest</option>
+              <option value="Interior_Design">Interior Design</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-contacts__line">
+          <label class="form-label form-contacts__label">
+            <span class="form-label__caption">Phone*</span>
+            <input type="tel" class="form-label__input" name="tel" placeholder="Your phone number"
+              required>
+          </label>
+          <label class="form-label form-contacts__label">
+            <span class="form-label__caption">Location*</span>
+            <select name="location" class="form-label__select" required>
+              <option value="">Choose your location</option>
+              <option value="Interior_Design">New York</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-contacts__line">
+          <label class="form-label form-contacts__label">
+            <span class="form-label__caption">Email</span>
+            <input type="email" class="form-label__input" name="email"
+              placeholder="Your working email">
+          </label>
+          <fieldset class="form-contacts__fields">
+            <legend class="form-label__caption">
+              Preferred contact method
+            </legend>
+            <div class="form-field__flex">
+              <label class="custom-radio form-contacts__radio">
+                <input type="radio" name="contact__method" value="phone" class="custom-radio__field"
+                  checked>
+                <span class="custom-radio__content">Phone</span>
+              </label>
+              <label class="custom-radio form-contacts__radio">
+                <input type="radio" name="contact__method" value="email"
+                  class="custom-radio__field">
+                <span class="custom-radio__content">Email</span>
+              </label>
+              <label class="custom-radio form-contacts__radio">
+                <input type="radio" name="contact__method" value="viber"
+                  class="custom-radio__field">
+                <span class="custom-radio__content">Viber</span>
+              </label>
+            </div>
+          </fieldset>
+        </div>
+        <label class="form-label  form-contacts__label form-contacts__label--big">
+          <span class="form-label__caption">Message*</span>
+          <textarea type="text" class="form-label__input form-label__input--big" name=" message"
+            placeholder="Your message" required></textarea>
+        </label>
+        <div class="form-contacts__bottom">
+          <label class="custom-checkbox form-contacts__checkbox">
+            <input type="checkbox" class="custom-checkbox__field" checked>
+            <span class="custom-checkbox__content">I agree to receive communications from Createx
+              Construction Bureau.</span>
+          </label>
+          <button type="submit" class="btn btn--fill form-contacts__btn">send request</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

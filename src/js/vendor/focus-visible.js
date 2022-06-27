@@ -1,3 +1,4 @@
+/* eslint-disable */
 /**
  * Applies the :focus-visible polyfill at the given scope.
  * A scope in this case is either the top-level Document or a Shadow Root.
@@ -6,11 +7,11 @@
  * @see https://github.com/WICG/focus-visible
  */
 function applyFocusVisiblePolyfill(scope) {
-  var hadKeyboardEvent = true;
-  var hadFocusVisibleRecently = false;
-  var hadFocusVisibleRecentlyTimeout = null;
+  let hadKeyboardEvent = true;
+  let hadFocusVisibleRecently = false;
+  let hadFocusVisibleRecentlyTimeout = null;
 
-  var inputTypesAllowlist = {
+  const inputTypesAllowlist = {
     text: true,
     search: true,
     url: true,
@@ -23,7 +24,7 @@ function applyFocusVisiblePolyfill(scope) {
     week: true,
     time: true,
     datetime: true,
-    'datetime-local': true
+    'datetime-local': true,
   };
 
   /**
@@ -33,12 +34,12 @@ function applyFocusVisiblePolyfill(scope) {
    */
   function isValidFocusTarget(el) {
     if (
-      el &&
-      el !== document &&
-      el.nodeName !== 'HTML' &&
-      el.nodeName !== 'BODY' &&
-      'classList' in el &&
-      'contains' in el.classList
+      el
+      && el !== document
+      && el.nodeName !== 'HTML'
+      && el.nodeName !== 'BODY'
+      && 'classList' in el
+      && 'contains' in el.classList
     ) {
       return true;
     }
@@ -50,11 +51,11 @@ function applyFocusVisiblePolyfill(scope) {
    * `focus-visible` class being added, i.e. whether it should always match
    * `:focus-visible` when focused.
    * @param {Element} el
-   * @return {boolean}
+   * @returns {boolean}
    */
   function focusTriggersKeyboardModality(el) {
-    var type = el.type;
-    var tagName = el.tagName;
+    const { type } = el;
+    const { tagName } = el;
 
     if (tagName === 'INPUT' && inputTypesAllowlist[type] && !el.readOnly) {
       return true;
@@ -157,8 +158,8 @@ function applyFocusVisiblePolyfill(scope) {
     }
 
     if (
-      e.target.classList.contains('focus-visible') ||
-      e.target.hasAttribute('data-focus-visible-added')
+      e.target.classList.contains('focus-visible')
+      || e.target.hasAttribute('data-focus-visible-added')
     ) {
       // To detect a tab/window switch, we look for a blur event followed
       // rapidly by a visibility change.
@@ -166,7 +167,7 @@ function applyFocusVisiblePolyfill(scope) {
       // regular focus change.
       hadFocusVisibleRecently = true;
       window.clearTimeout(hadFocusVisibleRecentlyTimeout);
-      hadFocusVisibleRecentlyTimeout = window.setTimeout(function() {
+      hadFocusVisibleRecentlyTimeout = window.setTimeout(() => {
         hadFocusVisibleRecently = false;
       }, 100);
       removeFocusVisibleClass(e.target);
@@ -284,7 +285,7 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
 
   // Notify interested libraries of the polyfill's presence, in case the
   // polyfill was loaded lazily:
-  var event;
+  let event;
 
   try {
     event = new CustomEvent('focus-visible-polyfill-ready');
