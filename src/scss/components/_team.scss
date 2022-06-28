@@ -51,7 +51,7 @@
     width: 100%;
     background-color: rgba($color: #ff5a30, $alpha: 70%);
     opacity: 0;
-    transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
   }
 
   &__link {
@@ -71,6 +71,20 @@
       width: 100%;
       height: 100%;
       fill: var(--light-color);
+      transition: fill 0.3s ease-in-out;
+
+      &:hover {
+        fill: var(--gray-300-color);
+      }
+
+      &:active {
+        fill: var(--gray-300-color);
+      }
+    }
+
+    &:focus {
+      outline: 2px solid var(--light-color);
+      outline-offset: 2px;
     }
   }
 
@@ -84,5 +98,20 @@
   &__bottom-link {
     border-bottom: 1px solid currentcolor;
     color: var(--primary-color);
+    transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+
+    &:focus {
+      outline: 2px solid var(--primary-color);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      border-bottom: 1px solid transparent;
+      color: var(--active-color);
+    }
+
+    &:active {
+      color: var(--active-color);
+    }
   }
 }

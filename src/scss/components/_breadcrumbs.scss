@@ -21,9 +21,15 @@
     font-size: 14px;
     line-height: 150%;
     color: var(--gray-800-color);
+    transition: color 0.3s ease-in-out;
 
     &:not([href]) {
       color: var(--gray-600-color);
+    }
+
+    &:focus {
+      outline: 2px solid var(--primary-color);
+      outline-offset: 2px;
     }
   }
 }

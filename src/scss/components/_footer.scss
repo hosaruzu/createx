@@ -101,7 +101,17 @@
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     width: 100%;
-    background: rgb(255 255 255 / 12%);
+    color: var(--light-color);
+    background-color: rgb(255 255 255 / 12%);
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: var(--gray-800-color);
+    }
+
+    &:active {
+      background-color: var(--gray-800-color);
+    }
   }
 
   &__descr {
@@ -133,6 +143,20 @@
 
   &__link {
     color: currentcolor;
+    transition: color 0.3s ease-in-out;
+
+    &:focus {
+      outline: 2px solid var(--primary-color);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      color: var(--gray-400-color);
+    }
+
+    &:active {
+      color: var(--gray-400-color);
+    }
   }
 }
 
@@ -158,5 +182,19 @@
     font-size: 16px;
     line-height: 160%;
     color: currentcolor;
+    transition: color 0.3s ease-in-out;
+
+    &:focus {
+      outline: 2px solid var(--primary-color);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      color: var(--gray-400-color);
+    }
+
+    &:active {
+      color: var(--gray-400-color);
+    }
   }
 }

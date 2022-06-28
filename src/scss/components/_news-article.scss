@@ -4,6 +4,7 @@
   height: 100%;
   box-shadow: var(--main-shadow);
   background-color: var(--light-color);
+  transition: transform 0.3s ease-in-out;
 
   &__title {
     margin: 0;
@@ -23,10 +24,28 @@
     font-size: 20px;
     line-height: 150%;
     color: var(--gray-900-color);
+    transition: color 0.3s ease-in-out;
+
+    &:focus {
+      outline: 2px solid var(--primary-color);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      color: var(--primary-color);
+    }
+
+    &:active {
+      color: var(--active-color);
+    }
   }
 
   &__text {
     padding: 20px 24px;
+  }
+
+  &:hover {
+    transform: translateY(3px);
   }
 
   &--small {
@@ -54,6 +73,7 @@
   &__item {
     position: relative;
     color: inherit;
+    transition: color 0.3s ease-in-out;
 
     &:not(:last-child) {
       margin-right: 21px;
@@ -65,7 +85,22 @@
         top: 3px;
         width: 1px;
         height: 11px;
-        background-color: currentcolor;
+        background-color: var(--gray-700-color);
+      }
+    }
+
+    &:first-child {
+      &:focus {
+        outline: 2px solid var(--primary-color);
+        outline-offset: 2px;
+      }
+
+      &:hover {
+        color: var(--gray-800-color);
+      }
+
+      &:active {
+        color: var(--active-color);
       }
     }
 

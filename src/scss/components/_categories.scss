@@ -32,7 +32,22 @@
     font-size: 16px;
     line-height: 160%;
     color: var(--gray-600-color);
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+
+    &:focus {
+      outline: 2px solid var(--primary-color);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      border: 1px solid var(--primary-color);
+      color: var(--primary-color);
+    }
+
+    &:active {
+      border: 1px solid var(--primary-color);
+      color: var(--primary-color);
+    }
 
     &--active {
       border-color: currentcolor;
@@ -81,6 +96,19 @@
       height: 24px;
       fill: currentcolor;
       object-fit: cover;
+    }
+
+    &:focus {
+      outline: 2px solid var(--primary-color);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      color: var(--primary-color);
+    }
+
+    &:active {
+      color: var(--primary-color);
     }
 
     &--active {

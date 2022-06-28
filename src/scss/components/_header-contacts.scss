@@ -31,6 +31,24 @@
     font-size: 18px;
     line-height: 150%;
     color: var(--gray-900-color);
+    transition: color 0.3s ease-in-out;
+  }
+
+  &:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    .contacts-link__value {
+      color: var(--primary-color);
+    }
+  }
+
+  &:active {
+    .contacts-link__value {
+      color: var(--active-color);
+    }
   }
 
   &--call {

@@ -17,6 +17,7 @@
   --warning-color: #f89828;
   --danger-color: #ff4242;
   --success-color: #03cea4;
+  --active-color: #fc3300;
   --gray-100-color: #f9f9f9;
   --gray-200-color: #f4f5f6;
   --gray-300-color: #e5e8ed;
@@ -34,3 +35,16 @@
     0 12px 10px -6px rgba(154 156 165 / 4%),
     0 4px 4px -4px rgb(30 33 44 / 3%);
 }
+
+// &:focus {
+//   outline: 2px solid var(--primary-color);
+//   outline-offset: 2px;
+// }
+
+// &:hover {
+//   background-color: var(--active-color);
+// }
+
+// &:active {
+//   background-color: var(--active-color);
+// }

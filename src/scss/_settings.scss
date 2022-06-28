@@ -1,3 +1,6 @@
+/* stylelint-disable selector-combinator-space-before */
+/* stylelint-disable selector-combinator-space-after */
+
 html {
   box-sizing: border-box;
 }
@@ -153,19 +156,63 @@ a {
   letter-spacing: 0.5px;
   text-transform: uppercase;
   color: var(--light-color);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 
   &--fill {
     background-color: var(--primary-color);
+
+    &:focus {
+      outline: 2px solid var(--primary-color);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      background-color: var(--active-color);
+    }
+
+    &:active {
+      background-color: var(--active-color);
+    }
   }
 
   &--stroke {
     &-light {
       border-color: var(--light-color);
+
+      &:focus {
+        outline: 2px solid var(--light-color);
+        outline-offset: 2px;
+      }
+
+      &:hover {
+        border-color: var(--gray-800-color);
+        background-color: var(--gray-800-color);
+      }
+
+      &:active {
+        background-color: var(--gray-800-color);
+      }
     }
 
     &-primary {
       border-color: var(--primary-color);
       color: var(--primary-color);
+
+      &:focus {
+        outline: 2px solid var(--primary-color);
+        outline-offset: 2px;
+      }
+
+      &:hover {
+        color: var(--light-color);
+        background-color: var(--primary-color);
+      }
+
+      &:active {
+        border-color: var(--active-color);
+        color: var(--light-color);
+        background-color: var(--active-color);
+      }
     }
   }
 }
@@ -260,7 +307,7 @@ a {
     }
   }
 
-  .custom-checkbox__field:focus + .custom-checkbox__content::before {
+  .custom-checkbox__field:focus+.custom-checkbox__content::before {
     outline: 2px solid var(--primary-color);
     outline-offset: 2px;
   }
@@ -285,6 +332,7 @@ a {
     font-size: 16px;
     line-height: 160%;
     color: var(--gray-800-color);
+    cursor: pointer;
   }
 
   &__content::before {
@@ -315,15 +363,15 @@ a {
     transition: opacity 0.3s ease-in-out;
   }
 
-  &__field:checked + &__content::before {
+  &__field:checked+&__content::before {
     border-color: var(--primary-color);
   }
 
-  &__field:checked + &__content::after {
+  &__field:checked+&__content::after {
     opacity: 1;
   }
 
-  &__field:focus + &__content {
+  &__field:focus+&__content {
     outline: 1px solid var(--primary-color);
   }
 }

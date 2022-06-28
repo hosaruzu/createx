@@ -22,17 +22,16 @@
     height: 154px;
     box-shadow: var(--main-shadow);
     background-color: var(--light-color);
-    transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.3s ease-in-out;
+
+    &:focus {
+      outline: 2px solid var(--primary-color);
+      outline-offset: 2px;
+    }
 
     &:hover {
-      background-color: var(--primary-color);
-
-      .portfolio-tabs__nav-icon {
-        fill: var(--light-color);
-      }
-
       .portfolio-tabs__nav-text {
-        color: var(--light-color);
+        color: var(--gray-900-color);
       }
     }
 
@@ -92,6 +91,11 @@
 
 .tabs__nav-btn--active {
   border-radius: 4px;
+  box-shadow:
+    0 60px 80px -20px rgb(255 90 48 / 16%),
+    0 26px 24px -10px rgb(255 90 48 / 10%),
+    0 12px 10px -6px rgb(255 90 48 / 8%),
+    0 4px 4px -4px rgb(30 33 44 / 5%);
   background-color: var(--primary-color);
 
   .portfolio-tabs__nav-icon {
@@ -111,6 +115,7 @@
   font-size: 16px;
   line-height: 160%;
   color: var(--gray-800-color);
+  transition: color 0.3s ease-in-out;
 
   svg {
     margin-right: 16px;
@@ -119,5 +124,18 @@
     color: inherit;
     fill: currentcolor;
     object-fit: cover;
+  }
+
+  &:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    color: var(--primary-color);
+  }
+
+  &:active {
+    color: var(--primary-color);
   }
 }

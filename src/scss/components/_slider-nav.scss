@@ -24,7 +24,17 @@
       transition: fill 0.3s ease-in-out;
     }
 
+    &:focus {
+      outline: 2px solid var(--primary-color);
+      outline-offset: 2px;
+    }
+
     &:hover {
+      color: var(--light-color);
+      background-color: var(--primary-color);
+    }
+
+    &:active {
       color: var(--light-color);
       background-color: var(--primary-color);
     }

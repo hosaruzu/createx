@@ -13,6 +13,20 @@
     font-weight: 700;
     line-height: 160%;
     color: var(--gray-800-color);
+    transition: color 0.3s ease-in-out;
+
+    &:focus {
+      outline: 2px solid var(--primary-color);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      color: var(--primary-color);
+    }
+
+    &:active {
+      color: var(--active-color);
+    }
 
     &--current {
       color: var(--primary-color);

@@ -80,10 +80,24 @@
   &__link {
     display: inline-block;
     margin-bottom: 24px;
+    border-bottom: 1px solid var(--primary-color);
     font-size: 16px;
-    line-height: 160%;
-    text-decoration: underline;
     color: var(--primary-color);
+    transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+
+    &:focus {
+      outline: 2px solid var(--primary-color);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      border-color: transparent;
+      color: var(--active-color);
+    }
+
+    &:active {
+      color: var(--active-color);
+    }
   }
 
   &__element {
@@ -93,6 +107,21 @@
 
     &:not(:last-child) {
       margin-bottom: 5px;
+
+      .contacts-info__value {
+        &:focus {
+          outline: 2px solid var(--primary-color);
+          outline-offset: 2px;
+        }
+
+        &:hover {
+          color: var(--active-color);
+        }
+
+        &:active {
+          color: var(--active-color);
+        }
+      }
     }
   }
 
@@ -100,5 +129,6 @@
     font-size: 16px;
     line-height: 160%;
     color: var(--gray-900-color);
+    transition: color 0.3s ease-in-out;
   }
 }

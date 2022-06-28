@@ -79,6 +79,19 @@
       background-color: currentcolor;
     }
 
+    &:focus {
+      outline: none;
+      color: var(--primary-color);
+    }
+
+    &:hover {
+      color: var(--primary-color);
+    }
+
+    &:active {
+      color: var(--primary-color);
+    }
+
     &--active {
       color: var(--primary-color);
     }
