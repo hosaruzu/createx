@@ -7,3 +7,4 @@ import './components/slider-work';
 import './components/portfolio-tabs';
 import './components/slider-history';
 import './components/selects';
+import './components/slider-hero';
