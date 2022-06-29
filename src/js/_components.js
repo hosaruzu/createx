@@ -8,3 +8,6 @@ import './components/portfolio-tabs';
 import './components/slider-history';
 import './components/selects';
 import './components/slider-hero';
+import './components/video';
+import './components/top-scroll';
+import './components/modals';

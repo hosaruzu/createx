@@ -1,0 +1,67 @@
+<div class="graph-modal">
+  <div class="graph-modal__container site-modal" role="dialog" aria-modal="true"
+    data-graph-target="subscribe">
+    <button class="btn-reset js-modal-close graph-modal__close"
+      aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <h2 class="site-modal__title">
+        Subscribe to our newsletter
+      </h2>
+      <form action="#" class="site-modal__form form-1">
+        <label class="form-label  site-modal__label">
+          <span class="form-label__caption">Name*</span>
+          <input type="text" class="form-label__input" name="name" placeholder="Your name" required>
+        </label>
+        <label class="form-label site-modal__label">
+          <span class="form-label__caption">Email</span>
+          <input type="email" class="form-label__input" name="email"
+            placeholder="Your working email">
+        </label>
+        <button type="submit" class="btn btn--fill site-modal__btn">send</button>
+      </form>
+    </div>
+  </div>
+  <div class="graph-modal__container site-modal" role="dialog" aria-modal="true"
+    data-graph-target="send-cv">
+    <button class="btn-reset js-modal-close graph-modal__close"
+      aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <h2 class="site-modal__title">
+        Send your CV
+      </h2>
+      <form action="#" class="site-modal__form form-2">
+        <label class="form-label  site-modal__label">
+          <span class="form-label__caption">Name*</span>
+          <input type="text" class="form-label__input" name="name" placeholder="Your name" required>
+        </label>
+        <label class="form-label site-modal__label">
+          <span class="form-label__caption">Location*</span>
+          <select name="location" class="form-label__select" required>
+            <option value="">Choose your location</option>
+            <option value="Interior_Design">New York</option>
+          </select>
+        </label>
+        <label class="form-label site-modal__label">
+          <span class="form-label__caption">Phone*</span>
+          <input type="tel" class="form-label__input" name="tel" placeholder="Your phone number"
+            required>
+        </label>
+        <label class="form-label site-modal__label">
+          <span class="form-label__caption">Email*</span>
+          <input type="email" class="form-label__input" name="email"
+            placeholder="Your working email" required>
+        </label>
+        <label class="form-label  site-modal__label site-modal__label--big">
+          <span class="form-label__caption">Covering letter*</span>
+          <textarea type="text" class="form-label__input form-label__input--big" name=" message"
+            placeholder="Your covering letter" required></textarea>
+        </label>
+        <label class="custom-file site-modal__file">
+          <input type="file" class="custom-file__field" required>
+          <span class="custom-file__content">Attach your CV*</span>
+        </label>
+        <button type="submit" class="btn btn--fill site-modal__btn">send</button>
+      </form>
+    </div>
+  </div>
+</div>

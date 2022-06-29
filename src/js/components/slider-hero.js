@@ -10,9 +10,9 @@ document.body.style.setProperty('--hero-slider-speed', `${heroSliderSpeed}ms`);
 Swiper.use([Navigation, Pagination]);
 const heroSlide = new Swiper('.hero-slider', {
   slidesPerView: '1',
-  // autoplay: {
-  //   delay: 3000,
-  // },
+  autoplay: {
+    delay: 3000,
+  },
   speed: heroSliderSpeed,
   navigation: {
     nextEl: '.hero__next',
