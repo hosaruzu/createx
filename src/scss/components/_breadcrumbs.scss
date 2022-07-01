@@ -32,4 +32,8 @@
       outline-offset: 2px;
     }
   }
+
+  @include tablet {
+    flex-wrap: wrap;
+  }
 }

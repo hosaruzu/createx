@@ -37,11 +37,25 @@
       .services-content__info {
         order: -1;
         padding-left: 0;
+
+        @include mobile {
+          order: initial;
+        }
       }
 
       .services-content__img {
         display: flex;
         justify-content: flex-end;
+      }
+    }
+
+    @include small-tablet {
+      margin-bottom: 10px !important;
+    }
+
+    @include mobile {
+      .services-content__info {
+        padding-top: 20px !important;
       }
     }
   }
@@ -58,6 +72,10 @@
   &__info {
     grid-column: 6 span;
     padding: 76px 25px;
+
+    @include mobile {
+      padding: 46px 15px;
+    }
   }
 
   &__title {
@@ -93,5 +111,9 @@
     position: absolute;
     right: -11px;
     top: 531px;
+  }
+
+  @include small-tablet {
+    padding-bottom: 40px;
   }
 }

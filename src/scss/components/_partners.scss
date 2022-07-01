@@ -12,6 +12,16 @@
     grid-template-columns: repeat(6, 1fr);
     gap: 102px;
     row-gap: 40px;
+
+    @include mini-desk {
+      gap: 40px;
+    }
+  }
+
+  &__item {
+    @include tablet {
+      grid-column: 2 span;
+    }
   }
 
   &__link {
@@ -27,6 +37,20 @@
 
     .partners__title {
       margin-bottom: 24px;
+    }
+
+    .partners__item {
+      @include mini-desk {
+        grid-column: 1 span;
+      }
+
+      @include small-tablet {
+        grid-column: 2 span;
+      }
+
+      @include mobile {
+        grid-column: 3 span;
+      }
     }
   }
 

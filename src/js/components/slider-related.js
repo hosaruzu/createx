@@ -15,11 +15,19 @@ const servicesSlider = new Swiper(relatedSlider, {
       nextNextActiveSlide.classList.add('slider-visible');
     },
   },
-  slidesPerView: '3',
+  slidesPerView: '1',
   spaceBetween: 30,
   navigation: {
     nextEl: '.related-projects__next',
     prevEl: '.related-projects__prev',
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
   },
 });
 

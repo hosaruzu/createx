@@ -10,19 +10,44 @@
   &__list {
     grid-template-rows: repeat(2, 255px);
     margin-bottom: 80px;
+
+    @include tablet {
+      grid-template-rows: initial;
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(6, 1fr);
+    }
   }
 
   &__item {
     grid-column: 3 span;
 
     &:first-child {
-      grid-column: span 7;
+      grid-column: 7 span;
       grid-row: 2 span;
+
+      @include tablet {
+        grid-column: 12 span;
+        grid-row: auto;
+      }
+
+      @include mobile {
+        grid-column: 6 span;
+      }
     }
 
     &:nth-child(2),
     &:nth-child(3) {
-      grid-column: span 5;
+      grid-column: 5 span;
+
+      @include tablet {
+        grid-column: 6 span;
+      }
     }
+  }
+
+  @include mobile {
+    padding: 40px 0;
   }
 }

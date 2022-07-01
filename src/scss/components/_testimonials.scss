@@ -12,10 +12,36 @@
     position: relative;
     z-index: 5;
     margin-bottom: -50px;
+
+    @include mini-desk {
+      width: 365px;
+      object-fit: cover;
+    }
+
+    @include tablet {
+      width: 290px;
+      height: 500px;
+    }
+
+    @include small-tablet {
+      display: none;
+    }
   }
 
   &__content {
     max-width: 612px;
+
+    @include tablet {
+      max-width: 450px;
+    }
+
+    @include small-tablet {
+      padding-bottom: 40px;
+    }
+
+    @include mobile {
+      max-width: 100%;
+    }
   }
 
   &__title {
@@ -31,6 +57,11 @@
     position: absolute;
     right: 5px;
     bottom: 4px;
+  }
+
+  @include mini-desk {
+    margin-bottom: 0;
+    padding-top: 64px;
   }
 }
 

@@ -19,6 +19,10 @@
   width: 100%;
   box-shadow: var(--main-shadow);
   background-color: var(--light-color);
+
+  @include small-tablet {
+    overflow-x: auto;
+  }
 }
 
 .table {
@@ -32,6 +36,10 @@
     line-height: 150%;
     text-transform: uppercase;
     color: var(--gray-900-color);
+
+    @include small-tablet {
+      font-size: 18px;
+    }
   }
 
   &__per {
@@ -39,6 +47,10 @@
     font-size: 18px;
     line-height: 150%;
     color: var(--gray-700-color);
+
+    @include small-tablet {
+      font-size: 16px;
+    }
   }
 
   &__th {
@@ -114,5 +126,13 @@
     padding: 7px 23px;
     font-size: 12px;
     letter-spacing: 0.5px;
+
+    @include tablet {
+      padding: 2px 14px;
+    }
+  }
+
+  @include small-tablet {
+    width: 1200px;
   }
 }

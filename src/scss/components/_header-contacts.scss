@@ -9,8 +9,27 @@
 
     &:not(:last-child) {
       margin-right: 35px;
+
+      @include tablet {
+        margin-right: 0;
+        margin-bottom: 25px;
+      }
     }
   }
+
+  @include tablet {
+    display: none;
+  }
+
+  &--nav {
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
+  }
+
+
 }
 
 .contacts-link {
@@ -32,6 +51,10 @@
     line-height: 150%;
     color: var(--gray-900-color);
     transition: color 0.3s ease-in-out;
+
+    @include mini-desk {
+      font-size: 16px;
+    }
   }
 
   &:focus {

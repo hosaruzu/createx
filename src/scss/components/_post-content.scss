@@ -75,6 +75,12 @@
         background-size: cover;
         background-repeat: no-repeat;
       }
+
+      @include mobile {
+        padding: 0;
+        padding-top: 45px;
+        font-size: 18px;
+      }
     }
 
     ul {

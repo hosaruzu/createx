@@ -11,6 +11,14 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 102px;
+
+    @include tablet {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include small-tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &:focus {

@@ -9,6 +9,20 @@
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 27px;
     gap: calc(var(--mission-gap) * 2);
+
+    @include mini-desk {
+      --mission-gap: 30px;
+    }
+
+    @include small-tablet {
+      --mission-gap: 14px;
+
+      margin-bottom: 0;
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   &__item {
@@ -44,6 +58,12 @@
     &--salary {
       background-image: url("../img/salary.svg");
     }
+
+    @include mobile {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
   }
 
   &__subtitle {
@@ -61,5 +81,13 @@
     font-size: 16px;
     line-height: 160%;
     color: var(--gray-700-color);
+
+    @include small-tablet {
+      font-size: 14px;
+    }
+  }
+
+  @include tablet {
+    padding-bottom: 40px;
   }
 }

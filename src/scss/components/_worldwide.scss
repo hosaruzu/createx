@@ -6,6 +6,10 @@
   &__title {
     margin-bottom: 60px;
   }
+
+  @include mini-desk {
+    display: none;
+  }
 }
 
 .worldwide-map {

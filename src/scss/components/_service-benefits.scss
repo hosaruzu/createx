@@ -18,6 +18,20 @@
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 27px;
     gap: calc(var(--mission-gap) * 2);
+
+    @include mini-desk {
+      --mission-gap: 30px;
+    }
+
+    @include small-tablet {
+      --mission-gap: 14px;
+
+      margin-bottom: 0;
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   &__item {
@@ -40,6 +54,10 @@
         background-image: url("../img/divider-dark.svg");
         background-position: center;
         background-repeat: no-repeat;
+
+        @include mobile {
+          display: none;
+        }
       }
     }
 
@@ -53,6 +71,12 @@
 
     &--control {
       background-image: url("../img/control.svg");
+    }
+
+    @include mobile {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
     }
   }
 
@@ -71,6 +95,10 @@
     font-size: 16px;
     line-height: 160%;
     color: rgba($color: #fff, $alpha: 60%);
+
+    @include small-tablet {
+      font-size: 14px;
+    }
   }
 
   &__centered {
@@ -80,5 +108,10 @@
   &__btn {
     width: 390px;
     transform: translateY(4px);
+
+    @include small-tablet {
+      width: 100%;
+      max-width: 390px;
+    }
   }
 }

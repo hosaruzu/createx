@@ -8,6 +8,15 @@
     justify-content: space-between;
     margin-bottom: 61px;
     transform: translateY(-59px);
+
+    @include small-tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @include mobile {
+      display: block;
+    }
   }
 
   &__panel {
@@ -45,6 +54,18 @@
       .portfolio-tabs__nav-text {
         color: var(--light-color);
       }
+    }
+
+    @include small-tablet {
+      margin: 5px;
+      width: 180px;
+      height: 110px;
+    }
+
+    @include mobile {
+      margin: 0;
+      margin-bottom: 10px;
+      width: 100%;
     }
   }
 

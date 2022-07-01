@@ -5,11 +5,28 @@
   &__image {
     flex-shrink: 0;
     margin-right: 20px;
+
+    @include mini-desk {
+      flex-shrink: initial;
+      max-width: 37%;
+    }
+
+    @include tablet {
+      display: none;
+    }
   }
 
   &__content {
     display: flex;
     justify-content: space-between;
+
+    @include tablet {
+      justify-content: center;
+    }
+  }
+
+  @include tablet {
+    padding: 60px 0;
   }
 }
 
@@ -21,6 +38,19 @@
     justify-content: space-between;
     margin-bottom: 23px;
     width: 100%;
+
+    @include mobile {
+      flex-wrap: wrap;
+      margin-bottom: 0;
+
+      &>* {
+        margin-bottom: 20px;
+      }
+
+      .form-field__flex {
+        display: flex;
+      }
+    }
   }
 
   &__label {
@@ -33,6 +63,10 @@
     &--big {
       width: 100%;
     }
+
+    @include mobile {
+      width: 100%;
+    }
   }
 
   &__bottom {
@@ -40,6 +74,10 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 39px;
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   &__checkbox {
@@ -49,6 +87,10 @@
       font-size: 16px;
       line-height: 160%;
       color: var(--gray-800-color);
+    }
+
+    @include mobile {
+      margin-bottom: 12px;
     }
   }
 

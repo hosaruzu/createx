@@ -10,6 +10,18 @@
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 118px;
     gap: calc(var(--contacts-gap) * 2);
+
+    @include mini-desk {
+      --contacts-gap: 60px;
+    }
+
+    @include tablet {
+      --contacts-gap: 25px;
+    }
+
+    @include small-tablet {
+      display: block;
+    }
   }
 
   &__item {
@@ -27,6 +39,10 @@
         background-position: center;
         background-repeat: no-repeat;
         transform: translateY(-50%);
+      }
+
+      @include small-tablet {
+        margin-bottom: 40px;
       }
     }
   }
@@ -66,6 +82,11 @@
     font-size: 28px;
     line-height: 150%;
     color: var(--gray-900-color);
+
+    @include mini-desk {
+      margin-bottom: 12px;
+      font-size: 22px;
+    }
   }
 
   &__address {
@@ -130,5 +151,9 @@
     line-height: 160%;
     color: var(--gray-900-color);
     transition: color 0.3s ease-in-out;
+  }
+
+  @include small-tablet {
+    padding-bottom: 40px;
   }
 }

@@ -129,6 +129,14 @@ a {
       color: var(--primary-color);
     }
   }
+
+  @include small-tablet {
+    font-size: 56px;
+  }
+
+  @include mobile {
+    font-size: 32px;
+  }
 }
 
 .main-descr {
@@ -141,6 +149,14 @@ a {
   &--home {
     margin-bottom: 60px;
     color: var(--light-color);
+  }
+
+  @include small-tablet {
+    font-size: 18px;
+  }
+
+  @include mobile {
+    font-size: 16px;
   }
 }
 
@@ -231,6 +247,21 @@ a {
   &--margin {
     margin-bottom: 25px;
   }
+
+  @include mini-desk {
+    font-size: 40px;
+    line-height: 55px;
+  }
+
+  @include tablet {
+    font-size: 36px;
+    line-height: 51px;
+  }
+
+  @include mobile {
+    font-size: 28px;
+    line-height: 40px;
+  }
 }
 
 .descr {
@@ -244,10 +275,19 @@ a {
   &--center {
     text-align: center;
   }
+
+  @include mini-desk {
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
 }
 
 .section-offset {
   padding-top: 120px;
+
+  @include small-tablet {
+    padding-top: 80px;
+  }
 }
 
 .additional {
@@ -262,10 +302,23 @@ a {
     font-size: 28px;
     line-height: 150%;
     color: var(--gray-900-color);
+
+    @include small-tablet {
+      margin-right: 0;
+      margin-bottom: 20px;
+      font-size: 22px;
+      text-align: center;
+    }
   }
 
   &__btn {
     cursor: pointer;
+  }
+
+  @include small-tablet {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -317,6 +370,10 @@ a {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: var(--grid-gap);
+
+  @include mobile {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .custom-radio {
@@ -394,6 +451,10 @@ a {
     line-height: 150%;
     text-transform: uppercase;
     color: var(--gray-600-color);
+
+    @include mobile {
+      font-size: 10px;
+    }
   }
 
   &__icon {
@@ -416,11 +477,21 @@ a {
     &:hover {
       background-color: var(--active-color);
     }
+
+    @include mobile {
+      width: 28px;
+      height: 28px;
+    }
   }
 
   &--active {
     opacity: 1;
     visibility: visible;
+  }
+
+  @include mobile {
+    right: 20px;
+    bottom: 80px;
   }
 }
 
@@ -556,5 +627,57 @@ a {
 
   &__field:focus+&__content {
     outline: 1px solid var(--primary-color);
+  }
+}
+
+.burger {
+  @include burger;
+
+  display: none;
+
+  @include tablet {
+    position: absolute;
+    right: 15px;
+    top: 23px;
+    z-index: 100;
+    display: block;
+  }
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 4;
+  background-color: rgba(#000, 60%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
+  &--active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.site-modal {
+  @include mobile {
+    padding: 15px;
+    padding-top: 40px;
+    width: 90%;
+
+    .site-modal__form {
+      width: 100%;
+    }
+
+    .site-modal__label .form-label__input {
+      width: 65%;
+    }
+
+    .choices {
+      width: 65%;
+    }
   }
 }

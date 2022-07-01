@@ -1,23 +1,31 @@
 import Swiper from 'swiper/bundle';
 
-const workImages = document.querySelector('.work-slider__items--big');
-const workThumbs = document.querySelector('.work-slider__items--small');
+const workImages = document.querySelector('.work-images-slider');
 
 if (workImages) {
-  const workSLider = new Swiper(workThumbs, {
+  const workSlider = new Swiper('.work-images-nav', {
     spaceBetween: 20,
-    slidesPerView: 10,
+    slidesPerView: 3,
     freeMode: true,
     watchSlidesProgress: true,
+    breakpoints: {
+      576: {
+        slidesPerView: 6,
+      },
+      768: {
+        slidesPerView: 10,
+      },
+    },
   });
-  const workSliderNav = new Swiper(workImages, {
+  const workSlidesNav = new Swiper(workImages, {
     spaceBetween: 20,
+    slidesPerView: 1,
     navigation: {
-      nextEl: '.work-slider__next',
-      prevEl: '.work-slider__prev',
+      nextEl: '.work-images__next',
+      prevEl: '.work-images__prev',
     },
     thumbs: {
-      swiper: workSLider,
+      swiper: workSlider,
     },
   });
 }

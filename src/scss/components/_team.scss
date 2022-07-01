@@ -11,11 +11,21 @@
         opacity: 1;
       }
     }
+
+    @include tablet {
+      text-align: center;
+    }
   }
 
   &__list {
     margin-bottom: 80px;
     row-gap: 60px;
+
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &__image {
@@ -52,6 +62,10 @@
     background-color: rgba($color: #ff5a30, $alpha: 70%);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+
+    @include tablet {
+      opacity: 1;
+    }
   }
 
   &__link {

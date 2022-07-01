@@ -10,11 +10,28 @@
   &__list {
     margin-bottom: 80px;
   }
+
+  @include mobile {
+    padding-top: 140px;
+    padding-bottom: 40px;
+  }
 }
 
 .services-list {
   &__item {
     grid-column: 3 span;
+
+    @include tablet {
+      grid-column: 6 span;
+    }
+
+    @include mobile {
+      grid-column: 4 span;
+    }
+  }
+
+  @include mobile {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -84,6 +101,10 @@
     line-height: 150%;
     color: var(--gray-900-color);
     transition: color 0.2s;
+
+    @include mid-desk {
+      font-size: 18px;
+    }
   }
 
   &:focus {
@@ -112,5 +133,9 @@
     &::before {
       background-image: url("../img/services-bg.jpg");
     }
+  }
+
+  @include mobile {
+    padding: 40px 10px;
   }
 }
